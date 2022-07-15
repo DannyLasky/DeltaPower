@@ -264,12 +264,6 @@ x = [12 24.5 24.5 12];
 y = [yLimit(1,1) yLimit(1,1) yLimit(1,2) yLimit(1,2)];
 patch(x,y,'k','FaceAlpha',0.1)
 
-if 0 == contains(graphTitle,["baseline","Baseline","recovery","Recovery"])
-    x = [1 5 5 1];
-    y = [yLimit(1,1) yLimit(1,1) yLimit(1,2) yLimit(1,2)];
-    patch(x,y,'r','FaceAlpha',0.1)
-end
-
 if list6 ~= "None"
     legend([p1 p2 p3 p4 p5 p6], legendNames, 'FontSize', 16)
 elseif list5 ~= "None"

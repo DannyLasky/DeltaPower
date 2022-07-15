@@ -38,12 +38,6 @@ x = [12.5 24.5 24.5 12.5];          % Gray box for lights-off hours
 y = [yLimit(1,1) yLimit(1,1) yLimit(1,2) yLimit(1,2)];
 patch(x,y,'k','FaceAlpha',0.1)
 
-if 0 == contains(fileNameEDF,["baseline","Baseline","recovery","Recovery"])
-    x = [1.5 5.5 5.5 1.5];          % Red box around the sleep deprivation hours
-    y = [yLimit(1,1) yLimit(1,1) yLimit(1,2) yLimit(1,2)];
-    patch(x,y,'r','FaceAlpha',0.1)
-end
-
 subplot(2,1,2)                                      % Plots gamma power
 plot(1:24,hourlyMatrix(:,n),'LineWidth',1.5);
 xlabel('Zeitgeber Time (h)', 'FontSize', 16);
@@ -58,12 +52,6 @@ patch(x,y,'y','FaceAlpha',0.1)
 x = [12.5 24.5 24.5 12.5];          % Gray box for lights-off hours
 y = [yLimit(1,1) yLimit(1,1) yLimit(1,2) yLimit(1,2)];
 patch(x,y,'k','FaceAlpha',0.1)
-
-if 0 == contains(fileNameEDF,["baseline","Baseline","recovery","Recovery"])
-    x = [1.5 5.5 5.5 1.5];          % Red box around the sleep deprivation hours
-    y = [yLimit(1,1) yLimit(1,1) yLimit(1,2) yLimit(1,2)];
-    patch(x,y,'r','FaceAlpha',0.1)
-end
 
 saveas(gcf, strcat('DG_',hourlyTable.Properties.VariableNames{m},'_',hourlyTable.Properties.VariableNames{n},'.png'))
 
