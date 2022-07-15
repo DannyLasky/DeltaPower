@@ -4,6 +4,8 @@ Scripts used for DORA/THIP 2022 paper
 Hello! I'm excited that you're interested in this code. This is my first time doing this, but I will do my best to describe the code effectively.
 I will also be writing this for future lab members with potentially no coding experience, so feel free to skim if you're experienced!
 If you have any lingering questions do not hesistate to reach out to me at djlasky@wisc.edu or whatever email I now have listed.
+A number of these scripts were written by Jesse Pfammatter, a previous lab member. These scripts are fully his and can also be found in their original repository at:
+https://github.com/jessePfammatter/detectSWDs.
 
 The purpose of these scripts was to quantify the delta power of mouse EEGs. This was done through a series of steps that are carried out individually by each of the
 written scripts. The only script that will be necessary to hit "run" on will be the "LaskyMaster" which will run all the other scripts for you in the correct sequence.
