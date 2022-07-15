@@ -28,7 +28,8 @@ sixtyHzFilt_EEG: Written by Jesse Pfammatter. Nested in the normalizeEEG functio
 highPassChebyshev1Filt_EEG: Written by Jesse Pfammatter. Nested in the normalizeEEG function. Runs prior to the full signal normalization and attenuates signals
 that fall below the cut-off frequency.
 
-fit_gauss: Written by Jesse Pfammatter. Nested in the normalizeEEG function. Runs as part of the full-signal normalization to fit the curve to a Gaussian.
+fit_gauss: Written by Jesse Pfammatter. Nested in the normalizeEEG function. Runs as part of the full-signal normalization to fit the curve to a Gaussian. This file
+can be found separately here: https://github.com/jessePfammatter/apneaDetector/blob/master/appFunctions_notNeededForAppInstall/fit_gauss.m.
 
 LaskyPower: Quantifies delta, theta, sigma, and gamma power for each epoch using a method recommended by Dr. Mathew Jones. Uses a simple power spectrum.
 
