@@ -15,7 +15,7 @@ will set the file names to be run (EDFs/TSVs) and the input/output directories.
 LaskyRead: Reads in the EDF (and TSV if being used). Identifies the right frontal channel and then expands the data array. Script will pull an error if the
 EDF was not sampled at 512 Hz, the TSV (if provided) was not sleep scored in 4 second epochs, and if the TSV (if provided) did not have a minimum bout length of 16 
 seconds (4 epochs). These are all parameters we wanted hold constant in our experiments. The errors can be changed or removed at the bottom of this script 
-as necessary. The TSV format used in this script was pulled from Sirenia Sleep by scoring in 4 seconds epochs, then clicking "Sleep/Bout Analysis" (the column graph 
+as necessary. The TSV format used in this script was pulled from Sirenia Sleep by scoring in 4 seconds epoch, then clicking "Sleep/Bout Analysis" (the column graph 
 icon), making sure "Length (epochs)" was set to 4, then clicking "Save TSV." This output is different from "Save Everything TSV." DO NOT USE THAT ONE.
 
 normalizeEEG: Written by Jesse Pfammatter (JP). Performs a full signal normalization using a Gaussian function. Outputs the mean, standard deviation, and fit of this
